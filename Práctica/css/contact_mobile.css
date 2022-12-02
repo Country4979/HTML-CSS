@@ -1,0 +1,50 @@
+body {
+    background-color: #6D8A96;
+    font-family: 'Century Gothic';
+    margin: 0px;
+}
+main {
+    margin-top: 10px;
+}
+
+/* Header */
+
+#fondo_cabecera {
+    width: 100%;
+    margin-top: -5px;
+    padding: 0px;
+}
+
+
+/* Main */
+
+
+
+legend {
+    font-style: oblique;
+}
+
+#titulo_contacto {
+    text-align: center;
+}
+
+.small{
+    font-style: italic;
+    
+}
+
+.required{
+    font-size: small;
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+}
+
+#columnas {
+    column-count: 2;
+    column-gap: 10px;
+    column-rule: 0ch;
+}
+
+
+/*COLOR MI NOMBRE #454B51*/

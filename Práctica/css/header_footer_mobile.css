@@ -1,0 +1,49 @@
+/* Header */
+
+#fondo_cabecera{
+    display: block;
+ 
+    background-image: url(../img/Fondo_cabecera_mobile.png); 
+    z-index: 1 ;
+}
+#image_cabecera {
+    display: block;
+    float: left;
+    z-index: 2;
+    
+}
+
+#texto_cabecera P {
+    display: block;
+    margin: 1%;
+    padding-left: 180px;
+    z-index: 2;
+}
+
+#nombre {
+    color: #454B51;
+    font-weight: bolder;
+    font-size: 5ex;  
+}
+
+#apellidos {
+    color: white;
+    font-weight: bolder;
+    font-size: 5ex;
+}
+
+#subtitulo {
+    color: white;
+    font-size: 2ex;
+}
+
+/* Footer */
+
+.footer a{
+    color: black;
+    text-decoration: none;
+}
+
+.footer li{
+    list-style: none;
+}

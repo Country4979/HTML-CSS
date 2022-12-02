@@ -4,49 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact_mobile.css" media="screen and (max-width: 600px)" type="text/css">
+    <link rel="stylesheet" href="css/header_footer_mobile.css" media="screen and (max-width: 600px)" type="text/css">
+    <link rel="stylesheet" href="css/contact_descktop.css" media="screen and (max-width: 1080px)" type="text/css">
     <title>Homepage</title>
 </head>
 <body>
     <header>
-
+        <section id="fondo_cabecera">
+            <div id="image_cabecera">
+                <img src="img/foto_cv_mobile.png" alt="">
+            </div>
+            <div id="texto_cabecera">
+                <div id="nombre">
+                    <p>Javier</p>
+                </div>
+                <div id="apellidos">
+                    <p>Girón López</p>
+                </div>
+                <div id="subtitulo">
+                    <p id="subtitulo"> Keepcoder | Web</p>
+                </div>
+            </div>  
+        </section>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="#skills" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="works.html" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="Contact.html" target="_blank" rel="noopener noreferrer"></a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
-    <form>
-        <input type="text" required>Nombre<br>
-        <input type="text" required>Apellidos<br>
-        <input type="tel" required>Teléfono<br>
-        <fieldset>¿Cómo nos conociste?<br>
-            <input type="radio" name="lugar">Universidad<br>
-            <input type="radio" name="lugar">Keepcoding kick-off<br>
-            <input type="radio" name="lugar">Colegio<br>
-            <input type="radio" name="lugar">En GitHub<br>
-        </fieldset>
-        <input type="url">
-        <input type="" name="Descripción">
+    <main>
+        <section name="CV">
+            <div id="xtract">
+                <h2 class="titles">EXTRACTO</h2>
+                <p>
+                    Estudiante Fullstack Web Developer interesado en adentrarme en el mercado laboral como desarrollador junior.
+                </p>
+            </div>
+            <div id="formacion">
+                <h2 class="titles">FORMACIÓN</h2>
+                <ul>
+                    <li>
+                        <p>
+                                Certificado de profesionalidad: Confección y publicación de páginas web en Hazerta Soluciones. Comunidad de Madrid. 2021 - 2022.  560 h.
+                            <ul>
+                                <li>Módulo I: Construcción de páginas web.</li>
+                                <li>Módulo II: Integración de componentes software en páginas web.</li>
+                                <li>Módulo III: Publicación de Páginas Web.</li>
+                                <li>Proyecto Final: Septiembre – Octubre de 2022.</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Programación de aplicaciones Android en  Hazerta Soluciones. Comunidad de Madrid. Enero - Marzo 2021. 60h. 
+                        </p>
+                    </li>
+                </ul>
+                <div id="skills">
+                    <h2 class="titles">SKILLS</h2>
+                    "HTML"
+                    "CSS"
+                    "JavaScript"
+                    "Phyton"
+                    "DDBB SQL"
+                    "MySQL"
+                    
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div id="div_footer" class="footer">
+            <nav id="nav_footer">
+                <ul>
+                    <li><a href="https://www.youtube.com/c/KeepCoding" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+                    <li><a href="https://twitter.com/KeepCoding_" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/keepcoding_es/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/keepcoding.training/" target="_blank" rel="noopener noreferrer"></a>Facebook</li>
+                    <li><a href="https://www.tiktok.com/@keepcoding" target="_blank" rel="noopener noreferrer">Tiktok</a></li>
 
-        <input type="submit" name="Guardar"
-
-
-
-    </form>
-
-
-    <footer> <!-- El footer debe ser de este estilo-->
-        <ul>
-            <li>
-                <a href="link 1" target="_blank" rel="noreferrer noopener">link 1</a> <!-- con rel="a todo eso", no deja info nuestra en la web-->
-            </li>
-            <li>
-                <a href="link 1" target="_blank" rel="noreferrer noopener">link 2</a> <!-- con rel="a todo eso", no deja info nuestra en la web-->
-            </li>
-            <li>
-                <a href="link 1" target="_blank" rel="noreferrer noopener">link 3</a> <!-- con rel="a todo eso", no deja info nuestra en la web-->
-            </li>
-            <li>
-                <a href="link 1" target="_blank" rel="noreferrer noopener">link 4</a> <!-- con rel="a todo eso", no deja info nuestra en la web-->
-            </li>
-
-
-        </ul>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
