@@ -4,26 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/contact_mobile.css" media="screen and (max-width: 600px)" type="text/css">
-    <link rel="stylesheet" href="css/header_footer_mobile.css" media="screen and (max-width: 600px)" type="text/css">
-    <link rel="stylesheet" href="css/contact_descktop.css" media="screen and (max-width: 1080px)" type="text/css">
+    <link rel="stylesheet" href="css/header_footer_mobile.css" media="screen and (max-width: 1439px)" type="text/css">
+    <!--<link rel="stylesheet" href="css/contact_descktop.css" media="screen and (min-width: 1440px)" type="text/css">-->
     <title>Homepage</title>
+
 </head>
 <body>
-    <header>
-        <section id="fondo_cabecera">
-            <div id="image_cabecera">
-                <img src="img/foto_cv_mobile.png" alt="">
-            </div>
-            <div id="texto_cabecera">
-                <div id="nombre">
-                    <p>Javier</p>
-                </div>
-                <div id="apellidos">
-                    <p>Girón López</p>
-                </div>
-                <div id="subtitulo">
-                    <p id="subtitulo"> Keepcoder | Web</p>
+<header>
+        <section id="cabecera">
+            <div class="header">
+                <div id="fondo_cabecera">
+                    <picture>
+                        <source media="(min-width: 1440px)" srcset="">
+                        <source media="(min-width: 768px)" srcset="img/Fondo_cabecera_mobile768x256.png">
+                    </picture>
+                    <div id="image_cabecera">
+                        <img src="img/foto_cv_mobile.png" alt="">
+                    </div>
+                    <div id="texto_cabecera">
+                        <div id="nombre">
+                            <p>Javier</p>
+                        </div>
+                        <div id="apellidos">
+                            <p>Girón López</p>
+                        </div>
+                        <div id="subtitulo">
+                            <p id="subtitulo"> Keepcoder | Web</p>
+                        </div>
+                    </div>
                 </div>
             </div>  
         </section>

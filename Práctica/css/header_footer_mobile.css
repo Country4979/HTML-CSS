@@ -1,25 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Header */
+#cabecera {
+    position: static;
+    display: grid;
+}
+
+.header {
+    max-height: 320px;
+}
 
 #fondo_cabecera{
-    display: block;
- 
-    background-image: url(../img/Fondo_cabecera_mobile.png); 
-    z-index: 1 ;
+    position: relative;
+         /*background-image: url(../img/Fondo_cabecera_mobile.png); */
+    z-index: 0 ;
+    margin: 0px 0px 0px 0px;
 }
+
 #image_cabecera {
-    display: block;
     float: left;
-    z-index: 2;
-    
+    z-index: 1;
 }
 
+#text_cabecera{
+    float: right;
+}
 #texto_cabecera P {
-    display: block;
+    position: relative;
+    text-align: left;
     margin: 1%;
-    padding-left: 180px;
-    z-index: 2;
+   
+    z-index: 1;
 }
-
 #nombre {
     color: #454B51;
     font-weight: bolder;
