@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #454B51;
+}
+
+.navbar {
+
+    font-weight: bolder;
+    display: block;
+    text-align: center;
+}
+
+.navbar-list {
+    display: inline;
+    list-style: none;
+    line-height: 40px;
+}
+
+.navbar-list li{
+    display: inline;
+}
+
+.navbar-item {
+    display: inline-block;
+    margin: 0 .25em;
+}
+
+/* NAV del FOOTER */
+
+.footer_navbar {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer_navbar-item {
+    display: inline;
+    margin: 0 .25em;
+}
+
+.footer_navbar-item img{
+    width: 3rem;
+}

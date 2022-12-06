@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/contact_mobile.css" media="screen and (max-width: 600px)" type="text/css">
-    <link rel="stylesheet" href="css/header_footer_mobile.css" media="screen and (max-width: 1439px)" type="text/css">
+    <link rel="stylesheet" href="css/common.css" media="screen and (max-width: 600px)" type="text/css">
+    <link rel="stylesheet" href="css/header_mobile.css" media="screen and (max-width: 600px)" type="text/css">
+    <link rel="stylesheet" href="css/nav.css" media="screen and (max-width: 600px)" type="text/css">
+    <link rel="stylesheet" href="css/home_page_mobile.css">
+    <link rel="stylesheet" href="css/footer_mobile.css" media="screen and (max-width: 1439px)" type="text/css">
     <!--<link rel="stylesheet" href="css/contact_descktop.css" media="screen and (min-width: 1440px)" type="text/css">-->
     <title>Homepage</title>
 
 </head>
 <body>
-<header>
+    <header>
         <section id="cabecera">
             <div class="header">
                 <div id="fondo_cabecera">
@@ -20,84 +23,81 @@
                         <source media="(min-width: 1440px)" srcset="">
                         <source media="(min-width: 768px)" srcset="img/Fondo_cabecera_mobile768x256.png">
                     </picture>
-                    <div id="image_cabecera">
+                    <div id="image_cabecera" class="image_cabecera">
                         <img src="img/foto_cv_mobile.png" alt="">
                     </div>
-                    <div id="texto_cabecera">
-                        <div id="nombre">
-                            <p>Javier</p>
+                    <div id="texto_cabecera" class="texto_cabecera" style="border: 2px solid blue;">
+                        <div id="nombre" class="name">
+                                <p>Javier</p>
                         </div>
-                        <div id="apellidos">
-                            <p>Girón López</p>
+                        <div id="apellidos" class="surname">
+                                <p>Girón López</p>
                         </div>
-                        <div id="subtitulo">
+                        <div id="subtitulo" class="subtittle">
                             <p id="subtitulo"> Keepcoder | Web</p>
                         </div>
-                    </div>
+                        </div>
                 </div>
             </div>  
-        </section>
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
-                    <li><a href="#skills" target="_blank" rel="noopener noreferrer"></a></li>
-                    <li><a href="works.html" target="_blank" rel="noopener noreferrer"></a></li>
-                    <li><a href="Contact.html" target="_blank" rel="noopener noreferrer"></a></li>
-                </ul>
-            </nav>
-        </section>
+        </section>  
     </header>
-    <main>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-itemm"><a href="#xtract">¿Quién soy?</a></li>
+            <li class="navbar-item"><a href="Contact.html" target="_blank" rel class="navbar-item"="noopener noreferrer">Contacto</a></li>
+            <li class="navbar-item"><a href="works.html" target="_blank" rel class="navbar-item"="noopener noreferrer">Proyectos</a></li>
+            <li class="navbar-item"><a href="#skills">Skills</a></li>
+            <li class="navbar-item"><a href="#div_footer">Redes</a></li>
+        </ul>
+    </nav>
+    <aside class="aside" style="border: 1px solid greenyellow;">
+        SLIDE PROYECTOS
+    </aside>
+    <main style="border: 1px solid orange;">
         <section name="CV">
             <div id="xtract">
-                <h2 class="titles">EXTRACTO</h2>
-                <p>
+                <p class="titles">Extracto</p>
+                <p class="main-text">
                     Estudiante Fullstack Web Developer interesado en adentrarme en el mercado laboral como desarrollador junior.
                 </p>
             </div>
             <div id="formacion">
-                <h2 class="titles">FORMACIÓN</h2>
-                <ul>
-                    <li>
-                        <p>
-                                Certificado de profesionalidad: Confección y publicación de páginas web en Hazerta Soluciones. Comunidad de Madrid. 2021 - 2022.  560 h.
-                            <ul>
-                                <li>Módulo I: Construcción de páginas web.</li>
-                                <li>Módulo II: Integración de componentes software en páginas web.</li>
-                                <li>Módulo III: Publicación de Páginas Web.</li>
-                                <li>Proyecto Final: Septiembre – Octubre de 2022.</li>
-                            </ul>
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Programación de aplicaciones Android en  Hazerta Soluciones. Comunidad de Madrid. Enero - Marzo 2021. 60h. 
-                        </p>
-                    </li>
-                </ul>
-                <div id="skills">
-                    <h2 class="titles">SKILLS</h2>
-                    "HTML"
-                    "CSS"
-                    "JavaScript"
-                    "Phyton"
-                    "DDBB SQL"
-                    "MySQL"
-                    
-                </div>
+                <p class="titles">Formación</p>
+                    <ul class="ul_main">
+                      <li class="li_main"><span  class="bold_it_sub">Certificado de profesionalidad:</span> Confección y publicación de páginas web en Hazerta Soluciones. Comunidad de Madrid. 2021 - 2022.  560 h.
+                                <ul class="ul_main">
+                                    <li class="li_main">Módulo I: Construcción de páginas web.</li>
+                                    <li class="li_main">Módulo II: Integración de componentes software en páginas web.</li>
+                                    <li class="li_main">Módulo III: Publicación de Páginas Web.</li>
+                                    <li class="li_main">Proyecto Final: Septiembre – Octubre de 2022.</li>
+                                </ul>
+                        </li>
+                        <li class="li_main"><span class="bold_it_sub">Programación de aplicaciones Android</span> en Hazerta Soluciones. Comunidad de Madrid. Enero - Marzo 2021. 60h.
+                        </li>
+                    </ul>
+                </p>
+            <div id="skills">
+                <p class="titles">Skills</p>
+                    <p class="main-text">
+                        "HTML"
+                        "CSS"
+                        "JavaScript"
+                        "Phyton"
+                        "DDBB SQL"
+                        "MySQL"
+                    </p>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer" style="border: solid 2px black">
         <div id="div_footer" class="footer">
-            <nav id="nav_footer">
+            <nav class="footer_navbar">
                 <ul>
-                    <li><a href="https://www.youtube.com/c/KeepCoding" target="_blank" rel="noopener noreferrer">Youtube</a></li>
-                    <li><a href="https://twitter.com/KeepCoding_" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/keepcoding_es/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/keepcoding.training/" target="_blank" rel="noopener noreferrer"></a>Facebook</li>
-                    <li><a href="https://www.tiktok.com/@keepcoding" target="_blank" rel="noopener noreferrer">Tiktok</a></li>
+                    <li class="footer_navbar-item"><a href="https://www.youtube.com/c/KeepCoding" target="_blank" rel="noopener noreferrer"><img src="img/logos/youtube.png" alt=""></a></li>
+                    <li class="footer_navbar-item"><a href="https://twitter.com/KeepCoding_" target="_blank" rel="noopener noreferrer"><img src="img/logos/twitter.png" alt=""></a></li>
+                    <li class="footer_navbar-item"><a href="https://www.instagram.com/keepcoding_es/" target="_blank" rel="noopener noreferrer"><img src="img/logos/instagram.png" alt=""></a></li>
+                    <li class="footer_navbar-item"><a href="https://www.facebook.com/keepcoding.training/" target="_blank" rel="noopener noreferrer"><img src="img/logos/facebook.png" alt=""></a></li>
+                    <li class="footer_navbar-item"><a href="https://www.tiktok.com/@keepcoding" target="_blank" rel="noopener noreferrer"><img src="img/logos/tiktok.png" alt=""></a></li>
 
                 </ul>
             </nav>

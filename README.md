@@ -39,7 +39,7 @@ Los documentos CSS se encargan de dar la apariencia deseada a la WEB haciéndola
 Su diseño se ha iniciado desde la vista de un dispositivo MOBILE para luego adaptarla a pantallas más grandes. Esto se ha conseguido utilizando diferentes documentos para diferentes tamaños de pantalla, principalmente (comentado anteriormente).
 Además, se han creado diferentes documentos para maquetar partes concretas y comunes a todos los documentos: footer, head, nav y main. De esta forma, cualquier cambio en uno de ellos se realizará en todos los docuemtnos que carguen el correspondiente css.
 
-Común a todos los docuementos CSS es el uso de "* {box-sizing: border-box;}" para indicar el uso de esta propiedad en el estilo de caja.
+Común a todos los docuementos CSS es el uso de "* {box-sizing: border-box;}" para indicar el uso de esta propiedad en el modelo de caja.
 
 -reset.css
 Este archivo se enlaza el primero de los links (por ser el html en cascada, es el primero que se carga y aplica) para resetear todas las propiedades del navegador y que todos muestren las páginas de la forma más parecida posible.

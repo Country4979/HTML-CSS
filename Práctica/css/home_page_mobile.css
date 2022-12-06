@@ -2,6 +2,37 @@
     box-sizing: border-box;
 }
 
+section {
+    margin-top: 5px;
+    text-align: justify;
+}
+
 .titles {
-    color: #454B51;
+    color: var(--main-tittles_color);
+    font-weight: bolder;
+    font-size: 3.5ex;
+    margin-bottom: .25em;
+    margin-left: 5px;
+}
+
+.bold_it_sub {
+    font-weight: bolder;
+    font-style: oblique;
+    text-decoration: underline;
+    color: var(--main-tittles_color);
+}
+.main-text{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.ul_main {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.li_main {
+    margin-left: 20px;
 }
