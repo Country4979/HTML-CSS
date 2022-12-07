@@ -1,6 +1,8 @@
 # HTML-CSS
 Módulo de HTML 5 y CSS 3
 
+Se ha bocetado la web usando el software "Balsamiq mockups", mostrando los distintos maquetados (sin imñagenes) de los diferentes tamaños de pantalla (mobile, tablet y desktop).
+
 La página web está desarrollada en HTML5 y maquetado con CSS3 para dispositivos móviles y luego se ha adaptado a uso de escritorio.
 Todos los documentos HTML tienen su estructuración normal con la etiqueta <html> que incluye las siguientes etiquetas:
 	<head>: Con todas las etiquetas <meta> y <links> a los distintos archivos CSS, así como el título de la página.
