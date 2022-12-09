@@ -8,7 +8,7 @@ section {
 }
 
 .titles {
-    color: var(--main-tittles_color);
+    color: var(--main-titles_color);
     font-weight: bolder;
     font-size: 3.5ex;
     margin-bottom: .25em;
@@ -19,7 +19,7 @@ section {
     font-weight: bolder;
     font-style: oblique;
     text-decoration: underline;
-    color: var(--main-tittles_color);
+    color: var(--main-titles_color);
 }
 .main-text{
     margin-left: 15px;

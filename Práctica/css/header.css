@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url(../img/small/Fondo_cabecera_mobile320x107.png);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.image_cabecera, .texto_cabecera {
+    margin: 0 5px;
+}
+.image_cabecera img {
+    width: 20vh;
+    object-fit: cover;
+}
+
+.surname, .subtitle {
+    color: var(--main_color);
+}
+
+.name, .surname {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.name {
+    color: var(--main-titles_color);
+}
+
+.subtitle {
+    font-size: 0.6rem;
+}

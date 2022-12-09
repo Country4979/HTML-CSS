@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav_btn {
+    display: none;
+}
+
+..nav_btn:hover {
+    
+}
+
+@media screen (max-width: 320px){
+    .nav_btn {
+        display: flex;
+    }
+}
