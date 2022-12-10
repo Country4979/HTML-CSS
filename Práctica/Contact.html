@@ -1,72 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/contact_mobile.css" media="screen and (max-width: 600px)" type="text/css">
-    <link rel="stylesheet" href="css/header_footer_mobile.css" media="screen and (max-width: 600px)" type="text/css">
-    <!--<link rel="stylesheet" href="css/contact_descktop.css" media="screen and (max-width: 1080px)" type="text/css">-->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/contact-style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/buttons.css">
     <title>Contact</title>
 </head>
 <body>
     <header>
-        <section id="fondo_cabecera">
-            <div id="image_cabecera">
-                <img src="img/foto_cv_mobile.png" alt="">
+        <div class="header">
+            <div id="image_cabecera" class="image_cabecera">
+                <a href="error/500.html">
+                    <img src="img/small/foto_cv_mobile.png" alt="">
+                </a>
             </div>
-            <div id="texto_cabecera">
-                <div id="nombre">
+            <div id="texto_cabecera" class="texto_cabecera">
+                <div id="nombre" class="name">
                     <p>Javier</p>
                 </div>
-                <div id="apellidos">
+                <div id="apellidos" class="surname">
                     <p>Girón López</p>
                 </div>
-                <div id="subtitulo">
-                    <p id="subtitulo"> Keepcoder | Web</p>
+                <div id="subtitulo" class="subtitle">
+                    <p> Keepcoder | Web</p>
                 </div>
-            </div>  
-        </section>
+            </div>
+        </div> 
     </header>
+
+    <nav class="navbar">
+        <ul class="list">
+            <li class="navbar-item"><a href="#xtract">¿Quién soy?</a></li>
+            <li class="navbar-item"><a href="Contact.html" target="_blank" rel class="navbar-item"="noopener noreferrer">Contacto</a></li>
+            <li class="navbar-item"><a href="works.html" target="_blank" rel class="navbar-item"="noopener noreferrer">Proyectos</a></li>
+            <li class="navbar-item"><a href="#skills">Skills</a></li>
+            <li class="navbar-item"><a href="#div_footer">Redes</a></li>
+        </ul>
+    </nav>
 
     <main>
         <div>
-            <h1 id="titulo_contacto">Datos de Contacto</h1>
+            <h1 id="titulo_contacto" class="contact_titles">Datos de Contacto</h1>
         </div>
         <div>
             <form action="registro-completado.html" method="post">
-                <div> <!-- Usar -->
+                <div>
                     <fieldset name="como_te_llamas">
                         <legend>¿Cómo te llamas?</legend>
-                            <div>
+                            <div id="labels">
                                 <label for="name" autofocus>Nombre</label>
-                                <input id="name" name="nombre" type="text" placeholder="Introduce tu nombre" required>*<br>
-                                <small class="small">No son válidos ni los números ni caracteres especiales</small>
+                                <input id="name" name="nombre" type="text" placeholder="Introduce tu nombre" required pattern="[A-Z a-z]" minlength="3" maxlength="50">*<br>
+                                <p class="small">No son válidos ni los números ni caracteres especiales</p>
                             </div>
-                            <div>
+                            <div id="inputs">
                                 <label for="surname">Apellidos</label>
-                                <input id="surname" name="apellidos" type="text" placeholder="Introduce tus apellidos" required>*<br>
-                                <small class="small">No son válidos ni los números ni caracteres especiales</small>
+                                <input id="surname" name="apellidos" type="text" placeholder="Introduce tus apellidos" required pattern="[A-Z a-z]" minlength="5" maxlength="50">*<br>
+                                <p class="small">No son válidos ni los números ni caracteres especiales</p>
                             </div>
                             <div>
                                 <label for="tel">Teléfono</label>
-                                <input id="tel" name ="telefono" type="tel" placeholder="Número de teléfono" required>*<br>
-                                <small class="small">Escribe tu número sin espacios ni caracteres especiales</small>
-                            </div>
-                            <div>
-                                <p class="required">*Campo obligatorio</p>
+                                <input id="tel" name ="telefono" type="tel" placeholder="Tu número de teléfono" required pattern="[0-9]" maxlength="9">*<br>
+                                <p class="small">Escribe tu númesro sin espacios ni caracteres especiales</p>
                             </div>
                     </fieldset>
                 </div>
                 <div>
-                    <fieldset name="como _me_conociste">
+                    <fieldset name="como_me_conociste">
                         <legend>¿Cómo me conociste?</legend>
-                        <div id="columnas">
-                            <input type="radio" name="lugar">Universidad<br>
-                            <input type="radio" name="lugar">Keepcoding kick-off<br>
-                            <input type="radio" name="lugar">Colegio<br>
-                            <input type="radio" name="lugar">En GitHub<br>
+                        <div id="radios" class="radios_container">
+                            <div class="radio">
+                                <input type="radio" name="lugar">Colegio<br>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="lugar">Universidad<br>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="lugar">Keepcoding Kick-off<br>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="lugar">GuitHub<br>
+                            </div>
                         </div>
                     </fieldset>
                 </div>
@@ -75,28 +96,31 @@
                             <legend>Cuéntame</legend>
                             <div>
                                 <label for="github">¿Quieres compartir algo?</label> 
-                                <input id="github" name="github" type="url">
+                                <input id="github" name="github" type="url" placeholder="Tu GuitHub" pattern="@([A-Za-z0-9_]{1,15})" autofocus>
                             </div>
                             <div>
-                                <label for="textarea">Descripción:</label><br>
-                                <textarea id="textarea" name="textarea" maxlength="180" cols="49" rows="8"></textarea><br>
+                                <label for="textarea">Comentrarios:</label><br>
+                                <textarea id="textarea" name="textarea" maxlength="180" cols="40" rows="6" placeholder="Deja tu comentario aquí"></textarea><br>
                                 <small class="small">Máximo: 180 caracteres</small>
                             </div>
                         </fieldset>
                     </div>
-                    <input type="submit" name="Enviar formulario">
+                    <button type="submit" name="Enviar_formulario" class="form_btn">ENVIAR</button>
+                    <button type="reset" name="Borrar_formulario" class="form_btn">BORRAR</button>
+
             </form>
         </div>
     </main>
-    <footer>
-        <div id="div_footer" class="footer">
-            <nav id="nav_footer">
+    <hr>
+    <footer class="footer">
+        <div id="div_footer" class="div_footer">
+            <nav class="footer_navbar">
                 <ul>
-                    <li><a href="https://www.youtube.com/c/KeepCoding" target="_blank" rel="noopener noreferrer">Youtube</a></li>
-                    <li><a href="https://twitter.com/KeepCoding_" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/keepcoding_es/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/keepcoding.training/" target="_blank" rel="noopener noreferrer"></a>Facebook</li>
-                    <li><a href="https://www.tiktok.com/@keepcoding" target="_blank" rel="noopener noreferrer">Tiktok</a></li>
+                    <li class="footer_navbar-item"><a href="https://www.youtube.com/c/KeepCoding" target="_blank" rel="noopener noreferrer"><img src="img/logos/youtube.png" alt=""></a></li>
+                    <li class="footer_navbar-item"><a href="https://twitter.com/KeepCoding_" target="_blank" rel="noopener noreferrer"><img src="img/logos/twitter.png" alt=""></a></li>
+                    <li class="footer_navbar-item"><a href="https://www.instagram.com/keepcoding_es/" target="_blank" rel="noopener noreferrer"><img src="img/logos/instagram.png" alt=""></a></li>
+                    <li class="footer_navbar-item"><a href="https://www.facebook.com/keepcoding.training/" target="_blank" rel="noopener noreferrer"><img src="img/logos/facebook.png" alt=""></a></li>
+                    <li class="footer_navbar-item"><a href="https://www.tiktok.com/@keepcoding" target="_blank" rel="noopener noreferrer"><img src="img/logos/tiktok.png" alt=""></a></li>
 
                 </ul>
             </nav>

@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin: 10px;
+}
+
+legend {
+    font-style: oblique;
+    font-weight: bold;
+    color: var(--main-titles_color);
+    margin-bottom: 5px;
+}
+
+fieldset {
+    margin-bottom: 10px;
+}
+
+input {
+    margin: 5px
+}
+
+.contact_titles {
+    color: var(--main-titles_color);
+    font-size: 3.5ex;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.small{
+    font-style: italic;
+    font-size: 1.2ex;
+    text-align: right;
+    color: brown;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 2px;
+}
+
+.radios_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

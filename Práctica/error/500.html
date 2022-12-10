@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="error_500_mobile.css" media="screen and (max-width: 600px)" type="text/css">
-    <link rel="stylesheet" href="error_500_desktop.css" media="screen and (min-width: 601px)" type="text/css">
-    <title>404_Error</title>
+    <link rel="stylesheet" href="../css/reset.css"  type="text/css">
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/error_500.css" type="text/css">
+
+    <title>500_Error</title>
 
 </head>
 <body>
     <div id="img">
+        <picture>
+            <source media="(min-width: 1440)" srcset="../img/large/error_500-large.png">
+            <source media="(min-width: )" srcset="../img/medium/error_500-medium.png"">
+            <img src="../img/small/error_500-small.png" alt="">
+        </picture>
     </div>
     <div id="main_text">
     <h1 class="main">ERROR 500</h1>

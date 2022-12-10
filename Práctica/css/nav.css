@@ -1,3 +1,7 @@
+.navbar {
+    display: none;
+}
+
 .navbar ul{
     display: flex;
     justify-content: space-between;
@@ -16,19 +20,10 @@ a:link, a:visited, a:hover, a:active {
     font-size: small;
 }
 
-a:active {
-    color: #d65a31
-}
-
-a:hover {
-    color: #f34a11;
-}
-
 /* MEDIA QUERYS */
 
-@media (max-width: 320px) {
+@media (min-width: 321px) {
     .navbar {
-        display: none;
+        display: flex;
     }
-    .navbar
 }

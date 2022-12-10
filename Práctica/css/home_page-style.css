@@ -7,6 +7,11 @@ section {
     text-align: justify;
 }
 
+hr {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .titles {
     color: var(--main-titles_color);
     font-weight: bolder;

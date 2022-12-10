@@ -2,16 +2,10 @@
     box-sizing: border-box;
 }
 
-.nav_btn {
-    display: none;
-}
-
-..nav_btn:hover {
-    
-}
-
-@media screen (max-width: 320px){
-    .nav_btn {
-        display: flex;
-    }
+.form_btn {
+    color: var(--main_color);
+    background-color: var(--main_background-color);
+    border-radius: 25px;
+    border: 0;
+    padding: 5px;
 }

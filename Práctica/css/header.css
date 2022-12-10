@@ -13,7 +13,7 @@
     margin: 0 5px;
 }
 .image_cabecera img {
-    width: 20vh;
+    width: 15vh;
     object-fit: cover;
 }
 
@@ -23,7 +23,7 @@
 
 .name, .surname {
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .name {
@@ -31,5 +31,5 @@
 }
 
 .subtitle {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
