@@ -1,0 +1,29 @@
+.navbar {
+    display: none;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;          
+}
+
+.navbar-item {
+    list-style: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+    padding: 0 5px;
+    font-weight: bolder;
+    color: var(--main-titles_color);
+    text-decoration: none;
+    font-size: small;
+}
+
+/* MEDIA QUERYS */
+
+@media (min-width: 321px) {
+    .navbar {
+        display: flex;
+    }
+}

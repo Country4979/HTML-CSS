@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.form_btn {
+    color: var(--main_color);
+    background-color: var(--main_background-color);
+    border-radius: 25px;
+    border: 0;
+    padding: 5px;
+}

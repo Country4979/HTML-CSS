@@ -1,0 +1,11 @@
+:root {
+    --main_background-color: #6D8A96;
+    --main_color: #FFF;
+    --main-titles_color: #454B51;
+    --main_font-family: 'Century Gothic';
+}
+
+body{
+    font-family: var(--main_font-family);
+    width: 100%;
+}
