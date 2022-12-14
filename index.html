@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/home_page-style.css">
+    <link rel="stylesheet" href="css/progress_bar.css">
     <link rel="stylesheet" href="css/footer.css">
     <title>Homepage</title>
 
@@ -44,11 +46,45 @@
             <li class="navbar-item"><a href="#div_footer">Redes</a></li>
         </ul>
     </nav>
-    
-    <aside class="aside" style="border: 1px solid greenyellow;">
-        SLIDE PROYECTOS
-    </aside>
-    <main style="border: 1px solid orange;">
+   
+    <section class="carousel-container">
+        <div class="carousel-slides">
+            <div id="slide1">
+                <a href="https://alvcuadros.000webhostapp.com/" target="_blank" rel="noopener noreferrer">
+                    <picture>
+                        <source media="(min-width: 1008px)" srcset="img/large/slide1_large.jpg" alt="Web Ecomode">
+                        <source media="(min-width: 640px)" srcset="img/medium/slide1_medium.jpg" alt="Web Ecomode">
+                        <img src="img/small/slide1_small.jpg" alt="Web Ecomode">
+                    </picture>
+                </a>
+            </div>
+            <div id="slide2">
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <picture>
+                        <source media="(min-width: 1440px)" srcset="img/large/" alt="">
+                        <source media="(min-width: 640px)" srcset="img/medium/" alt="">
+                        <img src="img/small/frontender-small.png" alt="Web FrontEnder">
+                    </picture>
+                </a>
+            </div>
+            <div id="slide3">Slide3
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <picture>
+                        <source media="(min-width: 1440px)" srcset="img/large/" alt="">
+                        <source media="(min-width: 640px)" srcset="img/medium/" alt="">
+                        <img src="img/small/" alt="">
+                    </picture>
+                </a>
+            </div>
+        </div>
+        <div class="carousel-links">
+            <a href="#slide1" class="carousel-dot"></a>
+            <a href="#slide2" class="carousel-dot"></a>
+            <a href="#slide3" class="carousel-dot"></a>
+        </div>
+    </section>
+
+    <main>
         <section name="CV">
             <div id="xtract">
                 <p class="titles">Extracto</p>
@@ -73,14 +109,62 @@
                 </p>
             <div id="skills">
                 <p class="titles">Skills</p>
-                    <p class="main-text">
-                        "HTML"
-                        "CSS"
-                        "JavaScript"
-                        "Phyton"
-                        "DDBB SQL"
-                        "MySQL"
-                    </p>
+                <div class="all_skills">
+                    <div class="skills">
+                        <p>
+                            <h3 class="skill_title">Hard</h3></p>
+                        <div class="main-text">
+                            HTML
+                            <div class="progress-bar-space">
+                                <div id="HTML_bar" class="progress-bar-value"></div>
+                            </div>
+                        </div>               
+                        <div class="main-text">
+                            CSS
+                            <div class="progress-bar-space">
+                                <div id="CSS_bar" class="progress-bar-value"></div>
+                            </div>
+                        </div>
+                        <div class="main-text">
+                            JavaScript
+                            <div class="progress-bar-space">
+                                <div id="JS_bar" class="progress-bar-value"></div>
+                            </div>
+                        </div>
+                        <div class="main-text">
+                            Phyton
+                            <div class="progress-bar-space">
+                                <div id="phyton_bar" class="progress-bar-value"></div>
+                            </div>
+                        </div>
+                        <div class="main-text">
+                            DDBB SQL
+                            <div class="progress-bar-space">
+                                <div id="SQL_bar" class="progress-bar-value"></div>
+                            </div>
+                        </div>
+                        <div class="main-text">
+                            MySQL
+                            <div class="progress-bar-space">
+                                <div id="mySQL_bar" class="progress-bar-value"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <p>
+                            <h3 class="skill_title">Soft</h3>
+                        </p>
+                        <ul class="skill-list">
+                            <li class="skill-list-item">Trabajo en equipo</li>
+                            <li class="skill-list-item">Autodidacta</li>
+                            <li class="skill-list-item">Aprendizaje fluido</li>
+                            <li class="skill-list-item">Adaptabilidad</li>
+                            <li class="skill-list-item">Ética en el trabajo</li>
+                            <li class="skill-list-item">Atención al detalle</li>
+                        </ul>
+                        
+                    </div>
+                </div>
             </div>
         </section>
     </main>

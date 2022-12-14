@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.carousel-container {
+    margin: 0;
+}
+
+.carousel-links {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-dot {
+    background-color: var(--main-titles_color);
+    margin: 0 5px;
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-radius: 50%;
+}
+
+.carousel-slides {
+    height:  15vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel-slides div {
+    height: 100%;
+    width: 100%;
+}
