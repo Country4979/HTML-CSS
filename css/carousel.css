@@ -22,7 +22,7 @@
 }
 
 .carousel-slides {
-    height:  15vh;
+    height:  20vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
