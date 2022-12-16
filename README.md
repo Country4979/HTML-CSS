@@ -93,6 +93,7 @@ Esta página, cuyo archivo de de origen es works.html, contiene la estructura b�
 	Skills - Conduce a la sección de la página de las skills de index.html.
 	Redes - Conduce al footer para que el usuario pueda seleccionar las redes que le interesen.
 
+El card id="card3" no está establecido con las anteriores etiquetas <picture><source> porque la calidad de la imagen a más tamaño no es buena.
 TERMINAR ESTA PÁGINA
 
 # REGISTRO COMPLETADO
@@ -120,7 +121,7 @@ Página de libre diseño cuyo archivo de origen es "400.html" a la que se llega 
 	2.- Texto informativo.
 	3.- Link de retorno a "index.html".
 
-#DOCUMENTOS CSS
+# DOCUMENTOS CSS
 Los documentos CSS se encargan de dar la apariencia deseada a la WEB haciéndolas responsive y accesibles.
 Su diseño se ha iniciado desde la vista de un dispositivo MOBILE para luego adaptarla a pantallas más grandes. Esto se ha conseguido utilizando diferentes documentos para diferentes tamaños de pantalla, principalmente (comentado anteriormente).
 Además, se han creado diferentes documentos para maquetar partes concretas y comunes a todos los documentos: footer, head, nav y main. De esta forma, cualquier cambio en uno de ellos se realizará en todos los docuemtnos que carguen el correspondiente css.

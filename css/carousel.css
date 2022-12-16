@@ -3,9 +3,8 @@
 }
 
 .carousel-container {
-    margin: 0;
+    margin-top: 0;
 }
-
 .carousel-links {
     margin-top: 5px;
     display: flex;
@@ -22,7 +21,7 @@
 }
 
 .carousel-slides {
-    height:  20vh;
+    max-height:  21vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -31,6 +30,16 @@
 }
 
 .carousel-slides div {
-    height: 100%;
     width: 100%;
+    overflow: hidden;
+}
+
+.a_slide picture source, .a_slide picture img{
+    object-fit: cover;
+    width: 100%;
+    /*height: 100%;*/
+}
+
+.carousel-container a{
+    padding: 0;
 }
