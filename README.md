@@ -57,7 +57,8 @@ En el menú de navegación de esta página, el link que debería llevar a la pri
 	Skills - Conduce a la sección de la página de las skills.
 	Redes - Conduce al footer para que el usuario pueda seleccionar las redes que le interesen.
 
-Otra diferencia que la diferencia a las demás páginas, en lo que a estructura se refiere, es la presencia de un slide controlado mediante CSS. Diferenciada de las demás secciones mediante una etiqueta <aside> y situado entre el nav-bar y el <main>.
+Otra diferencia que la diferencia a las demás páginas, en lo que a estructura se refiere, es la presencia de un slide, o carrusel. Diferenciada de las demás secciones mediante la etiqueta <section> y situado entre el nav-bar y el <main>.
+Consta de de un dic contenedor que alberga otros dos div, uno superior con imágenes representativas de los proyectos existentes en "works.html", y otro inferior con los enlaces a las imñagenes, en forma de puntos. Las imágenes tienen enlace a los respectivos proyectos dentro de la página "works.html".
 
 # CONTACT
 
@@ -101,7 +102,7 @@ Página de libre diseño cuyo archivo de origen es "registro-completado.html". S
 	1.- Fondo monocolor establecido mediante CSS.
 	2.- Imagen. Mediante las etiquetas <picture> y <source> para adecuar las imágenes al tamaño d ela pantalla, con la particularidad de que son imágenes diferentes para los tres tamaños definidos.
 	3.- Contiene un texto de información del registro.
-	4.- Botón con un link a "index.html" y una imagen responsive como en el caso anterior, solo que sólo responde a dos tamaños definidos y siempre es la misma imagen.
+	4.- Botón con un link a "index.html" y una imagen responsive como en el caso anterior, solo que sólo responde a dos tamaños establecidos y siempre es la misma imagen.
 
 # ERROR 404
 
@@ -128,3 +129,30 @@ Común a todos los docuementos CSS es el uso de "* {box-sizing: border-box;}" pa
 
 -reset.css
 Este archivo se enlaza el primero de los links (por ser el html en cascada, es el primero que se carga y aplica) para resetear todas las propiedades del navegador y que todos muestren las páginas de la forma más parecida posible.
+
+# CSS
+
+Cada parte de las páginas está dividida en difrentes archivos CSS para facilitar la lectura del código y para que las pates en común de las distintas páginas sólo se tengan que cambiar una vez en un archivo. Así, como se comentó anteriormente, en cada página se cargan los difrentes archivos CSS que la maquetan.
+
+Los selectores son principalmente de clase (.nombre_clase), aunque también los hay de pseudoelementos (:nombre_pseudoelemento) y para id's (#nombre_id). también controlamos dónde actúa el CSS mediante herencia exclusiva a hijos (elemento> hijo) o a cualquier elemento de clase o tipo determinado por debajo del nodo especificado (elemento padre elemento/clase descendiente afectado).
+
+# COMMON
+
+En este archivo creamos variables que afectarán a todos los documentos, como el tipo de letra (font-family), colores de fondo, de texto y títulos, así como el tipo de letra, en este caso "Century Gothic".
+
+# HEADER
+
+Mediante media-querys se establecen distintas imágenes de fondo del DIV contenedor (background-img) para distintos tamaños de pantalla. Lo mismo ocurre para el tamaño de la imagen de la izquierda y el tamaño de fuente de los textos. En el caso del tamaño de pantalla tipos Desktop, la imagen de la izquierda está desplazada hacia abajo intencionadamente.
+Los colores 
+
+# BARRA DE NAVEGACION
+
+La barra de navegación se maqueta ene l archivo "nav.css" y se ha definido para tres tamaños diferentes de pantalla. En el primer caso, "Mobile", el navbar se ha ocultado y se desplegará mediante menú tipo "Hamburguesa". Para la pantalla "Tablet", el menú aparece bajo la cabecera y con el texto centrado. Para las pantallas tamaño "Desktop", la barra de navegación se sigue situando bajo la cabecera, pero el texto está ligeramente desplazado hacia la derecha para dejar más espacio a la imagen de la cabecera.
+Al igual que el caso anterior, mediante media query le indicamos al navegador cómo debe dibujar la página según el tamaño de pantalla.
+Los items del navegador mantienen los colores definidos para los títulos en "common.css" porque usan la propiedad color:var(--main-titles_color). Además, estos items tienen una transición de 0.3 segundos que aumenta el espaciado de las letras (propiedad letter-spacing) y cambia el color de las mismas a naranja (color: rgb(255,165,0), definido mediande codificación rgb para que se presente lo más parecido posible en los distintos navegadores.
+
+CARRUSEL
+
+El carrusel está maquetado en el archivo "carousel.css". Consta de dos partes, los puntos y las imágenes. La primera, mediante los atributos display: flex y justify-content: center centramos los puntos horizontalmente.
+Para las imágenes, la maquetación la hacemos diferente: un display:flex y un flex-direction: column y flex-wrap:wrap. Con estos tres atributos le decimos que alinee los objetos en forma de columna. Con overflow: hidden le indicamos al navegador que no muestre el trozo de imagen que sobresalga de su contenedor.
+La transición entre una imagen y otra la hace de forma suave.
