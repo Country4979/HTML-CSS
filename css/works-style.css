@@ -16,7 +16,7 @@ a, a:hover, a:visited {
     margin: 10px;
     display: grid;
     gap: 10px 10px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
     
 }
