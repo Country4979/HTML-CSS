@@ -50,17 +50,14 @@
 
 #HTML_bar {
     animation: HTML_progressbar 1s ease-in-out;
-    animation-fill-mode: forwards;
 }
 
 #CSS_bar {
     animation: CSS_progressbar 1s ease-in-out;
-    animation-fill-mode: forwards;
 }
 
 #JS_bar {
-    animation: JS_progressbar 1s ease-in-out;
-    animation-fill-mode: forwards;
+    animation: JS_progressbar 1s ease-in-out; 
 }
 
 #phyton_bar {
@@ -70,10 +67,12 @@
 
 #SQL_bar {
     animation: SQL_progressbar 1s ease-in-out;
-    animation-fill-mode: forwards;
 }
 
 #mySQL_bar {
-    animation: mySQL_progressbar 1s ease-in-out;
+    animation: mySQL_progressbar 1s ease-in-out;   
+}
+
+#HTML_bar, #CSS_bar, #JS_bar, #phyton_bar, #SQL_bar, #mySQL_bar {
     animation-fill-mode: forwards;
 }

@@ -13,9 +13,6 @@
     .skill_title {
         font-size: 1.5rem;
     }
-    .skill-list> li {
-        transition: font-size 1s ease-in-out, color .3s ease-in-out, font-weight .3s ease-in-out;
-    }
     .skill-list> li:hover {
         font-size: 1.5rem;
     }
@@ -28,5 +25,8 @@
     }
     .skill_title {
         font-size: 1.6rem;
+    }
+    .skill-list> li:hover {
+        font-size: 2rem;
     }
 }
