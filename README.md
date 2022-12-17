@@ -11,14 +11,14 @@ Todos los documentos HTML tienen su estructuración normal con la etiqueta <html
 	<head>: Con todas las etiquetas <meta> y <links> a los distintos archivos CSS, así como el título de la página.
 	<body>: Con el contenido del documento que se mostrará en panatalla.
 
-# Etiqueta <head>
-	En esta parte se incluyen las etiquetas <meta> que especifican eñ sistema UTF-8 de caracteres, la escala inicial de la pantalla, los links a todos los archivos CSS para el maquetado deseado y la etiqueta <title> para el título que aparecerá en la pestaña de cada página.
+# Etiqueta "head"
+	<head> En esta parte se incluyen las etiquetas <meta> que especifican eñ sistema UTF-8 de caracteres, la escala inicial de la pantalla, los links a todos los archivos CSS para el maquetado deseado y la etiqueta <title> para el título que aparecerá en la pestaña de cada página.
 
-# Etiqueta <body>
+# Etiqueta "body"
 
 A excepción de las páginas de error 404 y 500, los docuemntos tienen están estructurados con una cabecera (<header>), un navbar (<nav>), un cuerpo principal (<main>) y un pie de página (<footer>).
 
-Además, con la etiqueta <section> separamaos las distintas partes del cuerpo principal y con las etiquetas <picture> y <source> controlamos las imñagenes según el tamaño de pantalla para aligerar la carga de datos.
+Además, con la etiqueta <section> separamaos las distintas partes del cuerpo principal y con las etiquetas <picture> y <source> controlamos las imágenes según el tamaño de pantalla para aligerar la carga de datos.
 
 # `<header>`
 
@@ -28,9 +28,16 @@ Además, con la etiqueta <section> separamaos las distintas partes del cuerpo pr
 # `<nav>`
 
 	El menú de navegación está compuesto por una etiqueta <ul> que contiene las etiquetas <li> que dan forma al mismo. Cada etiqueta <li> tiene un link (<a>) a partes de la página o a otras páginas.
-	Los links que llevan a páginas diferentes de la Web se redirecionan a nuevas ventañas o pestañas (atributo target="_blank"), según lo tenga definido el usuario en su navegador, y con las propiedades  rel class="navbar-item"="noopener noreferrer", que evita pasar la información de referencia al sitio web de destino eliminando la información de referencia del encabezado HTTP..
+	Los links que llevan a páginas diferentes de la Web se redirecionan a nuevas ventañas o pestañas (atributo target="_blank"), según lo tenga definido el usuario en su navegador, y con las propiedades  rel class="navbar-item"="noopener noreferrer", que evita pasar la información de referencia al sitio web de destino eliminando la información de referencia del encabezado HTTP.
+	
+	Además, este menú queda oculto en el modo mobile y se accede a él mediante un menú tipo "hamburguesa" desarrollado exclusivamente mediante CSS. Por este motivo, esta etiqueta se encuentra dentro del div con calse "respmenu". Esto es necesario porque para realizar la funcionalidad de este tipo de menú hamburguesa, reside en tres aspectos clave:
 
-	Además, este menú queda oculto en el modo mobile y se accede a él mediante un menú tipo "hamburguesa" desarrollado exclusivamente mediante CSS.
+		1.- Usar un input de tipo checkbox para saber cuando el menú está visible o no.
+		2.- Usar el selector de hermanos generales para lograr que el estado del checkbox se refleje en el menú.
+		3.- El checbox tiene que apaarecer antes en el HTML.
+
+	La segunda condición tiene una importante implicación, y es que resulta imprescindible que el checkbox y el menú sean hermanos en la jerarquia del HTML.
+
 
 # `<main>`
 
@@ -131,6 +138,9 @@ Común a todos los docuementos CSS es el uso de "* {box-sizing: border-box;}" pa
 -reset.css
 Este archivo se enlaza el primero de los links (por ser el html en cascada, es el primero que se carga y aplica) para resetear todas las propiedades del navegador y que todos muestren las páginas de la forma más parecida posible.
 
+-all.min.css
+Enlace externo a esta web, perteneciente a Font Awesome y se usa exclusivamente para extraer los iconos del menú hamburguesa.
+
 # CSS
 
 Cada parte de las páginas está dividida en difrentes archivos CSS para facilitar la lectura del código y para que las pates en común de las distintas páginas sólo se tengan que cambiar una vez en un archivo. Así, como se comentó anteriormente, en cada página se cargan los difrentes archivos CSS que la maquetan.
@@ -149,10 +159,12 @@ Los colores
 # BARRA DE NAVEGACION
 
 La barra de navegación se maqueta ene l archivo "nav.css" y se ha definido para tres tamaños diferentes de pantalla. En el primer caso, "Mobile", el navbar se ha ocultado y se desplegará mediante menú tipo "Hamburguesa". Para la pantalla "Tablet", el menú aparece bajo la cabecera y con el texto centrado. Para las pantallas tamaño "Desktop", la barra de navegación se sigue situando bajo la cabecera, pero el texto está ligeramente desplazado hacia la derecha para dejar más espacio a la imagen de la cabecera.
+En el modo Mobile, gracias al selector de de hermanos generales (~) podemos hacer que cuando el input esta en estado :checked, se muestre el nav, y cuando no se encuentra en dicho estado, el menú se oculte. Algo similar hacemos con los iconos de Font Awesome para mostrar/esconder el icono adecuado según el estado del checkbox. Gracias a position: absolute;, que nos permite colocar los iconos justo encima del checkbox. Finalmente, con pointer-events: none; hacemos que los iconos sean "transparentes" a los eventos del ratón, de modo que pese a estar encima del checkbox, no van a recibir ningún click del ratón, y por lo tanto será el checkbox el que los reciba a pesar de estar debajo de los iconos.
+
 Al igual que el caso anterior, mediante media query le indicamos al navegador cómo debe dibujar la página según el tamaño de pantalla.
 Los items del navegador mantienen los colores definidos para los títulos en "common.css" porque usan la propiedad color:var(--main-titles_color). Además, estos items tienen una transición de 0.3 segundos que aumenta el espaciado de las letras (propiedad letter-spacing) y cambia el color de las mismas a naranja (color: rgb(255,165,0), definido mediande codificación rgb para que se presente lo más parecido posible en los distintos navegadores.
 
-CARRUSEL
+# CARRUSEL
 
 El carrusel está maquetado en el archivo "carousel.css". Consta de dos partes, los puntos y las imágenes. La primera, mediante los atributos display: flex y justify-content: center centramos los puntos horizontalmente.
 Para las imágenes, la maquetación la hacemos diferente: un display:flex y un flex-direction: column y flex-wrap:wrap. Con estos tres atributos le decimos que alinee los objetos en forma de columna. Con overflow: hidden le indicamos al navegador que no muestre el trozo de imagen que sobresalga de su contenedor.

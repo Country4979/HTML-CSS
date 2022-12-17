@@ -31,6 +31,9 @@ hr {
     margin-right: 15px;
     margin-bottom: 15px;
 }
+.main-text p {
+    margin-bottom: 5px;
+}
 
 .ul_main {
     margin-left: 15px;
@@ -76,4 +79,14 @@ hr {
     color: orange;
     font-size: 1.1rem;
     font-weight: 600;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right ul {
+    margin-top: -5px;
 }
