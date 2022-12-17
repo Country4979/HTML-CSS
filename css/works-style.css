@@ -3,31 +3,35 @@
 }
 
 a{
+    display: block;
+    justify-content: center;
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
 a, a:hover, a:visited {
-    color: #000;
+    color: #454B51;
 }
+
+.card {
+    background-color: whitesmoke;
+    min-width: 180px;
+    max-width: 350px;
+    min-height: 175px;
+    padding: 3px;
+    border: 1px rgb(197, 193, 193) solid;
+    border-radius: 25px;
+    box-shadow: 1px 1px;
+} 
 
 .container {
     margin: 10px;
     display: grid;
     gap: 10px 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, auto);
-    
+    grid-template-columns: 1fr;   
 }
 
-.card {
-    min-width: 180px;
-    padding: 3px;
-    border: 1px rgb(197, 193, 193) solid;
-    border-radius: 25px;
-    box-shadow: 1px 1px;
-}
 
 picture {
     margin: 0;

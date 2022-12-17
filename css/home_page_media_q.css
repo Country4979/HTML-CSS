@@ -21,17 +21,12 @@
     }
 }
 
-@media screen and (min-width: 640px) and (max-width: 1007px) {
-    
-}
-
-/*
 @media screen and (min-width: 1008px) {
     .main-text, .ul_main, .skill-list-item {
-        font-size: 1.3rem;
-        line-height: 25px;
+        font-size: 1.8rem;
+        line-height: 35px;
     }
     .skill_title {
         font-size: 1.6rem;
     }
-}*/
+}

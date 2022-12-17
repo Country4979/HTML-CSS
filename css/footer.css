@@ -38,16 +38,15 @@ footer {
     align-items: center;
 }
 
-@media screen and (min-width: 640px) and (max-width: 1007px) {
-    .footer li{
-        margin-top: 20px;
-        width: 15%;
+@media screen and (min-width: 640px) and (max-width: 1008px) {
+
+    .footer_navbar-item img, .footer_navbar-item a {
+        width: 92%;
     }
 }
 
 @media screen and (min-width: 1008px) {
-    .footer li{
-        margin-top: 25px;
-        width: 15%;
+    .footer_navbar-item img, .footer_navbar-item a {
+        width: 100%;
     }
 }
