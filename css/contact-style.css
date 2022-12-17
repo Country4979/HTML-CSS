@@ -28,7 +28,8 @@ input {
     margin-bottom: 10px;
 }
 
-.small{
+.small {
+    display: block;
     font-style: italic;
     font-size: 1.2ex;
     text-align: right;
@@ -41,4 +42,64 @@ input {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media screen and (min-width: 640px) {
+    .como_te_llamas {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 80px 2fr 100px;
+    }
+    #label_name {
+        grid-column: 1/2;
+    }
+    #name {
+        grid-column: 2/3;
+    }
+    #small_name {
+        grid-column: 2/4;
+    }
+    #label_surname {
+        grid-column: 1/2;
+    }
+    #surname {
+        grid-column: 2/3;
+    }
+    #small_surname {
+        grid-column: 2/4
+    }
+    #label_tel {
+        grid-column: 1/2;
+    }
+    #tel {
+        grid-column: 2/3;
+    }
+    #small_tel {
+        grid-column: 2/4
+    }
+    .radios_container {
+        justify-content: space-around;
+    }
+    .sobre_ti {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 230px 2fr 100px;
+        grid-gap: 10px 0px;
+    }
+    #compartir {
+        grid-column: 1/2;
+    }
+    #gitHub {
+        grid-column: 2/3;
+    }
+    #comentarios {
+        grid-column: 1/2;
+    }
+    #textarea {
+        grid-column: 2/3;
+    }
+    #small_comentarios {
+        margin-top: 5px;
+        grid-column: 2/4
+    }
 }

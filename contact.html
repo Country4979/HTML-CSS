@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -57,23 +58,21 @@
         <div>
             <form action="registro-completado.html" method="post">
                 <div>
-                    <fieldset name="como_te_llamas">
+                    <fieldset class="como_te_llamas" name="como_te_llamas">
                         <legend>¿Cómo te llamas?</legend>
-                            <div id="labels">
-                                <label for="name" autofocus>Nombre</label>
+                            
+                                <label id="label_name" for="name" autofocus>Nombre:</label>
                                 <input id="name" name="nombre" type="text" placeholder="Introduce tu nombre" required pattern="^[a-z A-Z ]*$" minlength="3" maxlength="50">*<br>
-                                <p class="small">No son válidos ni los números ni caracteres especiales</p>
-                            </div>
-                            <div id="inputs">
-                                <label for="surname">Apellidos</label>
+                                <p id="small_name" class="small">*No son válidos ni los números ni caracteres especiales</p>
+                            
+                            
+                                <label id="label_surname" for="surname">Apellidos:</label>
                                 <input id="surname" name="apellidos" type="text" placeholder="Introduce tus apellidos" required pattern="^[a-z A-Z ]*$" minlength="5" maxlength="50">*<br>
-                                <p class="small">No son válidos ni los números ni caracteres especiales</p>
-                            </div>
-                            <div>
-                                <label for="tel">Teléfono</label>
+                                <p id="small_surname" class="small">*No son válidos ni los números ni caracteres especiales</p>
+                           
+                                <label id="label_tel" for="tel">Teléfono:</label>
                                 <input id="tel" name ="telefono" type="tel" placeholder="Tu número de teléfono" required pattern="[0-9]*$" maxlength="9">*<br>
-                                <p class="small">Escribe tu númesro sin espacios ni caracteres especiales</p>
-                            </div>
+                                <p id="small_tel" class="small">*Escribe tu númesro sin espacios ni caracteres especiales</p>       
                     </fieldset>
                 </div>
                 <div>
@@ -96,17 +95,16 @@
                     </fieldset>
                 </div>
                     <div>
-                        <fieldset name="sobre _ti">
+                        <fieldset class="sobre_ti" name="sobre _ti">
                             <legend>Cuéntame</legend>
-                            <div>
-                                <label for="github">¿Quieres compartir algo?</label> 
-                                <input id="github" name="github" type="text" placeholder="Tu GuitHub" pattern="@([A-Za-z0-9_]{1,15})*$" autofocus>
-                            </div>
-                            <div>
-                                <label for="textarea">Comentrarios:</label><br>
+                        
+                                <label id="compartir" for="github">¿Quieres compartir algo?</label> 
+                                <input id="github" name="github" type="text" placeholder="Tu GuitHub" pattern="@([A-Za-z0-9_]{1,15})*$">
+                          
+                                <label id="comentarios" for="textarea">Deja aquí tus comentrarios:*</label><br>
                                 <textarea id="textarea" name="textarea" maxlength="180" cols="40" rows="6" placeholder="Deja tu comentario aquí"></textarea><br>
-                                <small class="small">Máximo: 180 caracteres</small>
-                            </div>
+                                <small id="small_comentarios" class="small">* Máximo: 180 caracteres</small>
+ 
                         </fieldset>
                     </div>
                     <button type="submit" name="Enviar_formulario" class="form_btn">ENVIAR</button>
