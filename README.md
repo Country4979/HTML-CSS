@@ -8,11 +8,11 @@ Posteriormente cada página se ha desarrollado exclusivamente en HTML5 y maqueta
 # DOCUMENTOS HTML
 
 Todos los documentos HTML tienen su estructuración normal con la etiqueta 'html' que incluye las siguientes etiquetas:
-	<head>: Con todas las etiquetas <meta> y <links> a los distintos archivos CSS, así como el título de la página.
-	<body>: Con el contenido del documento que se mostrará en panatalla.
+	'head': Con todas las etiquetas <meta> y <links> a los distintos archivos CSS, así como el título de la página.
+	'body': Con el contenido del documento que se mostrará en panatalla.
 
 # Etiqueta 'head'
-	<head> En esta parte se incluyen las etiquetas <meta> que especifican eñ sistema UTF-8 de caracteres, la escala inicial de la pantalla, los links a todos los archivos CSS para el maquetado deseado y la etiqueta <title> para el título que aparecerá en la pestaña de cada página.
+En esta parte se incluyen las etiquetas <meta> que especifican eñ sistema UTF-8 de caracteres, la escala inicial de la pantalla, los links a todos los archivos CSS para el maquetado deseado y la etiqueta <title> para el título que aparecerá en la pestaña de cada página.
 
 # Etiqueta 'body'
 
@@ -22,29 +22,29 @@ Además, con la etiqueta 'section' separamaos las distintas partes del cuerpo pr
 
 # 'header'
 
-	En <header> tenemos la estructura de la cabecera del documento. A excepción de las páginas anteriormente indicadas, header está compuesto de un DIV clase container que controla la disposicion de los otros DIVs que contiene. Estos otros DIVs son los que a su vez contienen la imagen por el lado izquierdo, y el texto por el derecho.
-	El tamaño de la imagen del header va en función del tamaño de la pantalla mediante el uso de <picture> y <souce> y sus propiedades. Además, dicha imagen tiene un link a la página de error "500.html" a propósito.
+En <header> tenemos la estructura de la cabecera del documento. A excepción de las páginas anteriormente indicadas, header está compuesto de un DIV clase container que controla la disposicion de los otros DIVs que contiene. Estos otros DIVs son los que a su vez contienen la imagen por el lado izquierdo, y el texto por el derecho.
+El tamaño de la imagen del header va en función del tamaño de la pantalla mediante el uso de <picture> y <souce> y sus propiedades. Además, dicha imagen tiene un link a la página de error "500.html" a propósito.
 
 # 'nav'
 
-	El menú de navegación está compuesto por una etiqueta <ul> que contiene las etiquetas <li> que dan forma al mismo. Cada etiqueta <li> tiene un link (<a>) a partes de la página o a otras páginas.
-	Los links que llevan a páginas diferentes de la Web se redirecionan a nuevas ventañas o pestañas (atributo target="_blank"), según lo tenga definido el usuario en su navegador, y con las propiedades  rel class="navbar-item"="noopener noreferrer", que evita pasar la información de referencia al sitio web de destino eliminando la información de referencia del encabezado HTTP.
-	
-	Además, este menú queda oculto en el modo mobile y se accede a él mediante un menú tipo "hamburguesa" desarrollado exclusivamente mediante CSS. Por este motivo, esta etiqueta se encuentra dentro del div con calse "respmenu". Esto es necesario porque para realizar la funcionalidad de este tipo de menú hamburguesa, reside en tres aspectos clave:
+El menú de navegación está compuesto por una etiqueta <ul> que contiene las etiquetas <li> que dan forma al mismo. Cada etiqueta <li> tiene un link (<a>) a partes de la página o a otras páginas.
+Los links que llevan a páginas diferentes de la Web se redirecionan a nuevas ventañas o pestañas (atributo target="_blank"), según lo tenga definido el usuario en su navegador, y con las propiedades  rel class="navbar-item"="noopener noreferrer", que evita pasar la información de referencia al sitio web de destino eliminando la información de referencia del encabezado HTTP.
 
-		1.- Usar un input de tipo checkbox para saber cuando el menú está visible o no.
-		2.- Usar el selector de hermanos generales para lograr que el estado del checkbox se refleje en el menú.
-		3.- El checbox tiene que apaarecer antes en el HTML.
+Además, este menú queda oculto en el modo mobile y se accede a él mediante un menú tipo "hamburguesa" desarrollado exclusivamente mediante CSS. Por este motivo, esta etiqueta se encuentra dentro del div con calse "respmenu". Esto es necesario porque para realizar la funcionalidad de este tipo de menú hamburguesa, reside en tres aspectos clave:
 
-	La segunda condición tiene una importante implicación, y es que resulta imprescindible que el checkbox y el menú sean hermanos en la jerarquia del HTML.
+	1.- Usar un input de tipo checkbox para saber cuando el menú está visible o no.
+	2.- Usar el selector de hermanos generales para lograr que el estado del checkbox se refleje en el menú.
+	3.- El checbox tiene que apaarecer antes en el HTML.
+
+La segunda condición tiene una importante implicación, y es que resulta imprescindible que el checkbox y el menú sean hermanos en la jerarquia del HTML.
 
 # 'main'
 
-	Aquí encontramos el cuerpo principal de cada página con las secciones, imágenes y todo lo necesario según su función. Cada una de ellas tiene un estilo común, con sus propiedades particulares.
+Aquí encontramos el cuerpo principal de cada página con las secciones, imágenes y todo lo necesario según su función. Cada una de ellas tiene un estilo común, con sus propiedades particulares.
 
 # 'footer'
 
-	Al igual que header, aquí estructuramos el pìe de página, construído como un menú de navegación anterior, solo que en este caso siempre está visible y los textos de los links son sustituídos por imágenes representativas de la página destino.
+Al igual que header, aquí estructuramos el pìe de página, construído como un menú de navegación anterior, solo que en este caso siempre está visible y los textos de los links son sustituídos por imágenes representativas de la página destino.
 
 
 # HOMEPAGE
