@@ -22,12 +22,12 @@ Además, con la etiqueta 'section' separamaos las distintas partes del cuerpo pr
 
 # 'header'
 
-En <header> tenemos la estructura de la cabecera del documento. A excepción de las páginas anteriormente indicadas, header está compuesto de un DIV clase container que controla la disposicion de los otros DIVs que contiene. Estos otros DIVs son los que a su vez contienen la imagen por el lado izquierdo, y el texto por el derecho.
-El tamaño de la imagen del header va en función del tamaño de la pantalla mediante el uso de <picture> y <souce> y sus propiedades. Además, dicha imagen tiene un link a la página de error "500.html" a propósito.
+En 'header' tenemos la estructura de la cabecera del documento. A excepción de las páginas anteriormente indicadas, header está compuesto de un DIV clase container que controla la disposicion de los otros DIVs que contiene. Estos otros DIVs son los que a su vez contienen la imagen por el lado izquierdo, y el texto por el derecho.
+El tamaño de la imagen del header va en función del tamaño de la pantalla mediante el uso de 'picture' y 'souce' y sus propiedades. Además, dicha imagen tiene un link a la página de error "500.html" a propósito.
 
 # 'nav'
 
-El menú de navegación está compuesto por una etiqueta <ul> que contiene las etiquetas <li> que dan forma al mismo. Cada etiqueta <li> tiene un link (<a>) a partes de la página o a otras páginas.
+El menú de navegación está compuesto por una etiqueta 'ul' que contiene las etiquetas 'li' que dan forma al mismo. Cada etiqueta 'li' tiene un link ('a') a partes de la página o a otras páginas.
 Los links que llevan a páginas diferentes de la Web se redirecionan a nuevas ventañas o pestañas (atributo target="_blank"), según lo tenga definido el usuario en su navegador, y con las propiedades  rel class="navbar-item"="noopener noreferrer", que evita pasar la información de referencia al sitio web de destino eliminando la información de referencia del encabezado HTTP.
 
 Además, este menú queda oculto en el modo mobile y se accede a él mediante un menú tipo "hamburguesa" desarrollado exclusivamente mediante CSS. Por este motivo, esta etiqueta se encuentra dentro del div con calse "respmenu". Esto es necesario porque para realizar la funcionalidad de este tipo de menú hamburguesa, reside en tres aspectos clave:
