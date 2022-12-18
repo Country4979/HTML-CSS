@@ -1,62 +1,3 @@
-@media screen and (min-width: 640px) {
-    .como_te_llamas {
-        align-items: center;
-        display: grid;
-        grid-template-columns: 80px 2fr 100px;
-    }
-    #label_name {
-        grid-column: 1/2;
-    }
-    #name {
-        grid-column: 2/3;
-    }
-    #small_name {
-        grid-column: 2/4;
-    }
-    #label_surname {
-        grid-column: 1/2;
-    }
-    #surname {
-        grid-column: 2/3;
-    }
-    #small_surname {
-        grid-column: 2/4
-    }
-    #label_tel {
-        grid-column: 1/2;
-    }
-    #tel {
-        grid-column: 2/3;
-    }
-    #small_tel {
-        grid-column: 2/4
-    }
-    .radios_container {
-        justify-content: space-around;
-    }
-    .sobre_ti {
-        align-items: center;
-        display: grid;
-        grid-template-columns: 230px 2fr;
-        grid-gap: 10px 0px;
-    }
-    #compartir {
-        grid-column: 1/2;
-    }
-    #gitHub {
-        grid-column: 2/3;
-    }
-    #comentarios {
-        grid-column: 1/2;
-    }
-    #textarea {
-        grid-column: 1/3;
-    }
-    #small_comentarios {
-        grid-column: 2/4;
-    }
-}
-
 @media screen and (min-width: 640px) and (max-width: 1008px) {
     #titulo_contacto {
         margin-top: 2%;
@@ -76,7 +17,7 @@
         align-items: center;
         display: grid;
         grid-template-columns: 300px 1fr;
-        grid-gap: 10px 0px;
+        gap: 10px 0px;
     }
     #compartir {
         grid-column: 1/3;
@@ -125,6 +66,5 @@
         align-items: center;
         display: grid;
         grid-template-columns: 450px 1fr;
-        grid-gap: 10px 0px;
     }
 }

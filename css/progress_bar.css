@@ -1,6 +1,6 @@
 .progress-bar-space {
     min-height: 10px;
-    background-color: lightgrey;
+    background-color: rgb(211, 211, 211);
     border-radius: 25px;
     border: 2px solid rgb(119, 117, 117);
     overflow: hidden;
