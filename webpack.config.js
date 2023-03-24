@@ -1,4 +1,4 @@
-modeule.export = {
+module.export = {
     home: './src/home.js',
     contact: './src/contact.js',
     completedReg: './src/completedReg.js',

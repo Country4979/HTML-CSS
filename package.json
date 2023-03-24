@@ -1,0 +1,23 @@
+{
+  "name": "my_html-css",
+  "version": "1.0.0",
+  "description": "Frontend Dev Pro Module",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Country4979/My_HTML-CSS.git"
+  },
+  "author": "Javier Giron Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Country4979/My_HTML-CSS/issues"
+  },
+  "homepage": "https://github.com/Country4979/My_HTML-CSS#readme",
+  "devDependencies": {
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
+  }
+}
