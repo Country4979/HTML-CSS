@@ -10,6 +10,7 @@ module.exports = {
         error500: './src/error500.js',
     },
     mode: 'development',
+    devtool: 'inline-source-map',
     output: {
         filename: '[name].bundel.js',
         path: __dirname + '/dist',
