@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/small/error_404-small.png);
+    background-repeat: no-repeat;
+}
+
+.text {
+    min-height: 600px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_text{
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: var(--main-titles_color);
+    font-weight: bolder;
+    font-size: 2rem;;
+}
+
+h2, a {
+    color: rgb(245, 245, 245);
+    padding-top: 1.2rem;
+}
+
+.link a{
+    font-size: 0.75rem;
+    font-style: oblique;
+    text-decoration: none;
+}
+
+.main_title {
+    font-size: 3.5rem;
+}
+
+@media (min-width: 600px) and (max-width: 1440px) {
+    body {
+        background-image: url(../img/medium/error_404-medium.png);
+    }
+    .main_title {
+        font-size: 6.6rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .link a {
+        font-size: 1.1rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        background-image: url(../img/large/error_404-large.jpg);
+    }
+    .main_title {
+        font-size: 10rem;
+    }
+    h1 {
+        font-size: 6.6rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    .link a {
+        font-size: 2rem;
+    }
+};

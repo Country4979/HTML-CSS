@@ -1,1 +1,1 @@
-console.log('Contact.js')
+import './css/contact.css'

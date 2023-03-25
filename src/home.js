@@ -1,1 +1,1 @@
-console.log('home.js')
+import './css/home.css'

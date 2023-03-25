@@ -1,1 +1,1 @@
-console.log('completedReg.js')
+import './css/completedReg.css'

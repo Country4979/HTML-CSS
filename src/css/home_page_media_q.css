@@ -1,0 +1,32 @@
+@media screen and (min-width: 640px) {
+    main {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .titles {
+        font-size: 4.5ex;
+    }
+    .main-text, .ul_main, .skill-list-item {
+        font-size: 19px;
+        line-height: 25px;
+    }
+    .skill_title {
+        font-size: 1.5rem;
+    }
+    .skill-list> li:hover {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1008px) {
+    .main-text, .ul_main, .skill-list-item {
+        font-size: 1.8rem;
+        line-height: 35px;
+    }
+    .skill_title {
+        font-size: 1.6rem;
+    }
+    .skill-list> li:hover {
+        font-size: 2rem;
+    }
+}

@@ -1,7 +1,5 @@
 module.exports = {
     entry: {
-        index: './src/index.js',
-        apps: './src/apps.js',
         home: './src/home.js',
         contact: './src/contact.js',
         completedReg: './src/completedReg.js',

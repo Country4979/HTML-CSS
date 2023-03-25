@@ -1,1 +1,1 @@
-console.log('Error500.js')
+import './css/error500.css'

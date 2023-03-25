@@ -1,1 +1,1 @@
-console.log('works.js')
+import './css/works.css'

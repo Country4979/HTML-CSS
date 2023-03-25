@@ -1,1 +1,1 @@
-console.log('error404.js')
+import './css/error404.css'

@@ -1,0 +1,10 @@
+@import url('./reset.css');
+@import url('./common.css');
+@import url('./header.css');
+@import url('./nav.css');
+@import url('./carousel.css');
+@import url('./home_page-style.css');
+@import url('./home_page_media_q.css');
+@import url('./progress_bar.css');
+@import url('./footer.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
