@@ -13,5 +13,13 @@ module.exports = {
         filename: '[name].bundel.js',
         path: __dirname + '/dist',
         clean: true,
+    },
+    modules: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader']
+            }
+        ]
     }
 }
