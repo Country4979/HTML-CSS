@@ -11,9 +11,9 @@
     <div class="container">
         <div class="registro">
             <picture>
-                <source media="(min-width: 1440px)" srcset="img/large/registro_completo_large.png" alt="Copa de campeones">
-                <source  media="(min-width: 600px)" srcset="img/medium/registro_completo_medium.png" alt="El Jesucristo Colega">
-                <img src="img/small/registro-correcto-small.png" alt="Empollón Celebrándolo">
+                <source media="(min-width: 1440px)" srcset="<%requires=('../img/large/registro_completo_large.png')%>" alt="Copa de campeones">
+                <source  media="(min-width: 600px)" srcset="<%requires=('../img/medium/registro_completo_medium.png')%>" alt="El Jesucristo Colega">
+                <img src="<%requires=('../img/small/registro-correcto-small.png')%>" alt="Empollón Celebrándolo">
             </picture>
             <h1>REGISTRO COMPLETADO EN...<br>
                 NINGÚN SITIO.</h1>
@@ -23,13 +23,13 @@
             <button class="btn_back">
                 <a href="index.html">
                     <picture>
-                        <source media="(min-width: 1440px)" srcset="img/large/back_home-large.png"alt="Botón de vuelta al inicio">  
-                        <img src="img/medium/back_home-medium.png" alt="Botón de vuelta al inicio">
+                        <source media="(min-width: 1440px)" srcset="<%requires=('../img/large/back_home-large.png')%>" alt="Botón de vuelta al inicio">  
+                        <img src="<%requires=('../img/medium/back_home-medium.png')%>" alt="Botón de vuelta al inicio">
                     </picture>
                 </a>
             </button>
         </div>
     </div>
 </body>
-<script src="dist/completedReg.bundel.js"></script>
+<!-- <script src="dist/completedReg.bundle.js"></script> -->
 </html>
