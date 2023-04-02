@@ -1,6 +1,6 @@
-$TABLET_WIDTH: 640px;
-$LAPTOP_WIDTH: 1008px;
-$LARGE_WIDTH: 1400px;
+$TABLET_WIDTH: 480px;
+$LAPTOP_WIDTH: 640px;
+$LARGE_WIDTH: 1008px;
 
 @mixin tablet {
     @media only screen and (min-width: $TABLET_WIDTH) {

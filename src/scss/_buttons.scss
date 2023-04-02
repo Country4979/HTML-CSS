@@ -1,4 +1,4 @@
-@use '/.responsive' as r;
+@use './responsive' as r;
 
 * {
     box-sizing: border-box;
@@ -10,8 +10,7 @@
     border-radius: 25px;
     border: 0;
     padding: 5px;
-
-    @include r.tablet {
+    @include r.laptop {
         margin-right: 2%;
         font-size: 1.2rem;
     }
