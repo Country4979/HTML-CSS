@@ -1,3 +1,5 @@
+@use '/.responsive' as r;
+
 * {
     box-sizing: border-box;
 }
@@ -8,16 +10,13 @@
     border-radius: 25px;
     border: 0;
     padding: 5px;
-}
-@media screen and (min-width: 640px) and (max-width: 1008px){
-    .form_btn {
+
+    @include r.tablet {
         margin-right: 2%;
         font-size: 1.2rem;
-    }  
-}
-@media screen and (min-width: 1008px) {
-    .form_btn {
+    }
+    @include r.large {
         margin-right: 2%;
         font-size: 2rem;
-    } 
+    }
 }
