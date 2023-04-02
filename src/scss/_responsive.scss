@@ -1,6 +1,7 @@
 $TABLET_WIDTH: 480px;
 $LAPTOP_WIDTH: 640px;
 $LARGE_WIDTH: 1008px;
+$ULTRALARGE_WIDTH: 1440px;
 
 @mixin tablet {
     @media only screen and (min-width: $TABLET_WIDTH) {
@@ -16,6 +17,12 @@ $LARGE_WIDTH: 1008px;
 
 @mixin large {
     @media only screen and (min-width: $LARGE_WIDTH) {
+        @content; 
+    }
+}
+
+@mixin ultraLarge {
+    @media only screen and (min-width: $ULTRALARGE_WIDTH) {
         @content; 
     }
 }

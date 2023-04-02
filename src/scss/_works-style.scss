@@ -1,3 +1,5 @@
+@use './responsive' as r;
+
 * {
     box-sizing: border-box;
 }
@@ -19,6 +21,12 @@ a{
     gap: 10px 10px;
     grid-template-columns: 1fr;
     justify-items: center;
+    @include r.tablet {
+        grid-template-columns: auto auto;
+    }
+    @include r.large {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .card {
@@ -43,13 +51,12 @@ picture {
     align-items: center;
 }
 
-.image--item img {
-    border-radius: 5px;
-    width: 10vh;
-}
-
 .image--item {
     margin-left: 5px;
+    img {
+        border-radius: 5px;
+        width: 10vh;
+    }
 }
 
 .item--text {
@@ -59,18 +66,18 @@ picture {
     color:rgb(126, 125, 125)
 }
 
-.text h1 {
+.text {
+    h1 {
     margin-bottom: 5px;
     color: var(--main-titles_color);
     font-weight: bolder;
     text-align: center;
-}
-
-.text p {
+    }
+    p {
     font-size: small;
+    }
 }
 
 .deco {
     font-style: italic;
 }
-
