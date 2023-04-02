@@ -1,1 +1,1 @@
-import './css/error500.css'
+import './scss/error500.scss'

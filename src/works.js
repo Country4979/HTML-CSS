@@ -1,1 +1,1 @@
-import './css/works.css'
+import './scss/works.scss'

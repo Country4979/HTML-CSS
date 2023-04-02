@@ -1,1 +1,1 @@
-import './css/completedReg.css'
+import './scss/completedReg.scss'
